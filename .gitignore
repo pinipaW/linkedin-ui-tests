@@ -1,0 +1,5 @@
+config.properties
+target/
+.idea/
+.vscode/
+screenshots/*.png

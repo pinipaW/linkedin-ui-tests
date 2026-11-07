@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LinkedIn UI Suite" preserve-order="true">
+  <listeners>
+    <listener class-name="com.sqa.utils.ScreenshotListener"/>
+  </listeners>
+  <test name="LinkedIn Tests" preserve-order="true">
+    <classes>
+      <class name="com.sqa.tests.LoginTest">
+        <methods>
+          <include name="validLogin"/>
+          <include name="invalidPasswordLogin"/>
+        </methods>
+      </class>
+      <class name="com.sqa.tests.SearchTest"/>
+      <class name="com.sqa.tests.SearchResultClickTest"/>
+    </classes>
+  </test>
+</suite>
